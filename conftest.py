@@ -26,5 +26,4 @@ def browser(request):
         browser = webdriver.Firefox(firefox_profile=fp)
     yield browser
     print("\nquit browser..")
-    time.sleep(5)
     browser.quit()
