@@ -30,7 +30,6 @@ def test_guest_cant_see_success_message_after_adding_product_to_basket(browser):
     page = ProductPage(browser, link)
     page.open()
     page.add_to_basket_form()
-    #page.solve_quiz_and_get_code()
     page.should_not_be_success_message()
 
 
@@ -47,7 +46,6 @@ def test_message_disappeared_after_adding_product_to_basket(browser):
     page = ProductPage(browser, link)
     page.open()
     page.add_to_basket_form()
-    #page.solve_quiz_and_get_code()
     page.should_be_disappeared()
 
 
