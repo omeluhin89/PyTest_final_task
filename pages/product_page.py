@@ -10,7 +10,7 @@ class ProductPage(BasePage):
     def should_be_add_to_basket_message(self):
         assert self.is_element_present(*ProductPageLocators.ADD_TO_BASKET_MESSAGE), "Message is not presented"
         assert self.is_element_present(*ProductPageLocators.PRODUCT_NAME), "Product name is not presented"
-        assert self.browser.find_element(*ProductPageLocators.PRODUCT_NAME).text in \
+        assert self.browser.find_element(*ProductPageLocators.PRODUCT_NAME).text == \
                self.browser.find_element(*ProductPageLocators.ADD_TO_BASKET_MESSAGE).text, "Product is wrong"
 
     def should_be_price_product_equals_price_basket(self):
