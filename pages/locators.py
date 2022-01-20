@@ -18,3 +18,6 @@ class ProductPageLocators():
     PRODUCT_NAME = (By.CSS_SELECTOR, '#content_inner h1')
 
 
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
